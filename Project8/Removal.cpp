@@ -12,15 +12,10 @@ void removal() {
 		num1--;
 		num2--;
 
-		bool found = false;
 		if (matrix[num1][0] == matrix[num2][1]) {
 			matrix[num1][0] = 0;
 			matrix[num2][1] = 0;
-			found = true;
 		}
-		if (found) 
-			cout << "Значения под указанными индексами совпадают и были заменены на 0." << endl;
-		
 		else 
 			cout << "Совпадений не найдено." << endl;
 		

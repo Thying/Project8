@@ -9,4 +9,6 @@ char* dectionary(
 
 void removal();
 
+void conclusion();
+
 #endif

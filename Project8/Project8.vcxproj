@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Conclusion.cpp" />
     <ClCompile Include="Dectionary.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Reference.cpp" />

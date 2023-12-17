@@ -16,14 +16,17 @@ int main() {
 		{3, 2}
 	};
 
-	for (int i = 0; i < rows; i++) {
-		for (int j = 0; j < cols; j++) {
-			cout << dectionary(matrix[i][j], j) << "\t";
-		}
-		cout << endl;
-	}
+	
 	while (1) {
-		cout << "Введите два числа: ";
+
+		system("cls");
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < cols; j++) {
+				cout << i+1 << ". " << dectionary(matrix[i][j], j) << "\t";
+			}
+			cout << endl;
+		}
+
 		int num1, num2;
 		cin >> num1 >> num2;
 		num1--;
@@ -40,21 +43,6 @@ int main() {
 					break;
 				}
 			}
-		}
-
-		if (found) {
-			cout << "Значения под указанными индексами совпадают и были заменены на 0." << endl;
-		}
-		else {
-			cout << "Совпадений не найдено." << endl;
-		}
-		system("cls");
-		cout << "Обновленный массив:" << endl;
-		for (int i = 0; i < rows; i++) {
-			for (int j = 0; j < cols; j++) {
-				cout << dectionary(matrix[i][j], j) << "\t";
-			}
-			cout << endl;
 		}
 	}
 	return 0;

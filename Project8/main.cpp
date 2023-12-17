@@ -1,13 +1,16 @@
 #include "functions.h"
+#include <thread>
+#include <chrono>
 using namespace std;
 
 int main() {
 
 
-	while (1) {
-		conclusion();
+		thread timerThread(timer);
+		thread removalThread(removal);
 
-		removal();
-	}
+		timerThread.join();
+		removalThread.join();
+
 	return 0;
 }

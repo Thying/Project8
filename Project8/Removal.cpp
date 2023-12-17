@@ -6,6 +6,8 @@ void removal() {
 	extern int matrix[5][2];
 
 	int num1, num2;
+	while (true)
+	{
 	cin >> num1 >> num2;
 	num1--;
 	num2--;
@@ -17,4 +19,5 @@ void removal() {
 				matrix[j][1] = 0;
 				break;
 			}
+	}
 }

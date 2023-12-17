@@ -11,4 +11,6 @@ void removal();
 
 void conclusion();
 
+void timer();
+
 #endif

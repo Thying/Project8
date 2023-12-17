@@ -8,24 +8,21 @@ void removal() {
 	int num1, num2;
 	while (true)
 	{
-	cin >> num1 >> num2;
-	num1--;
-	num2--;
+		cin >> num1 >> num2;
+		num1--;
+		num2--;
 
-	bool found = false;
-	for (int i = 0; i < 5; i++)
-		for (int j = 0; j < 5; j++)
-			if (num1 == i && num2 == j && matrix[i][0] == matrix[j][1]) {
-				matrix[i][0] = 0;
-				matrix[j][1] = 0;
-				found = true;
-				break;
-			}
-	if (found) {
-		cout << "Значения под указанными индексами совпадают и были заменены на 0." << endl;
-	}
-	else {
-		cout << "Совпадений не найдено." << endl;
-	}
+		bool found = false;
+		if (matrix[num1][0] == matrix[num2][1]) {
+			matrix[num1][0] = 0;
+			matrix[num2][1] = 0;
+			found = true;
+		}
+		if (found) 
+			cout << "Значения под указанными индексами совпадают и были заменены на 0." << endl;
+		
+		else 
+			cout << "Совпадений не найдено." << endl;
+		
 	}
 }

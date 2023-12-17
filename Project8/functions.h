@@ -7,4 +7,6 @@ char* dectionary(
 	int num,	// номер слова в хранилище
 	bool lag);	// язык если true англ, иначе рус
 
+void removal();
+
 #endif

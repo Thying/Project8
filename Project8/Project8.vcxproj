@@ -125,6 +125,8 @@
   <ItemGroup>
     <ClCompile Include="Dectionary.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Reference.cpp" />
+    <ClCompile Include="Removal.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="functions.h" />

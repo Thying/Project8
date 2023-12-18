@@ -7,14 +7,7 @@
 
 using namespace std;
 
-void timer() {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-
-	int seconds; // количество секунд до закрытия программы
-
-	cout << "Введите сколько секунд вы хотите играть: ";
-	cin >> seconds;
+void timer(int seconds) {
 
 	for (int i = 0; i < seconds; i++) {
 		// Задержка в выполнении программы

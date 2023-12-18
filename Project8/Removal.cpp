@@ -18,6 +18,6 @@ void removal() {
 		}
 		else 
 			cout << "Совпадений не найдено." << endl;
-		
+		filling();
 	}
 }

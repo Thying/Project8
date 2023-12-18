@@ -13,4 +13,6 @@ void conclusion();
 
 void timer();
 
+void filling();
+
 #endif

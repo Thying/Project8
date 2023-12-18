@@ -11,7 +11,7 @@ void removal();
 
 void conclusion();
 
-void timer();
+void timer(int seconds);
 
 void filling();
 
